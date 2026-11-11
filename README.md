@@ -1,8 +1,25 @@
 # Rotation
 
-**Self-hosted Plexamp listening analytics, Story Studio cards, and Plex smart playlists — powered by your Tautulli database and Plex Media Server.**
+**Wrapped for users who use Plex instead of Spotify or Apple Music.**  
+Self-hosted Plexamp listening analytics, Story Studio cards, and Plex smart playlists — powered by your Tautulli database and Plex Media Server.
 
 Built with pure **Python 3.11 standard library** (zero external pip dependencies), a single-file responsive web/PWA UI with offline support, a built-in **First-Launch Setup Wizard**, and an optional **Passcode Login Gate**.
+
+---
+
+## Screenshots
+
+### Overview KPIs & New Discoveries
+![Rotation Overview KPIs and New Discoveries](docs/dashboard-1-overview.png)
+
+### Monthly Trends, Hourly Listening & Listening Hurricane
+![Rotation Monthly Trends Hourly Charts and Listening Hurricane](docs/dashboard-2-hurricane.png)
+
+### Day & Hour Heatmap, 60-Day History & 365-Day Listening Map
+![Rotation Heatmaps and 365-Day Listening Map](docs/dashboard-3-heatmaps.png)
+
+### Completion Telemetry, Genres, Decades, Top Tracks & Devices
+![Rotation Completion Genres Top Tracks and Devices](docs/dashboard-4-taste.png)
 
 ---
 
