@@ -1,0 +1,27 @@
+services:
+  rotation:
+    build: .
+    image: rotation:latest
+    container_name: rotation
+    network_mode: host
+    restart: unless-stopped
+    environment:
+      - PORT=8888
+      - PLEX_URL=${PLEX_URL:-http://127.0.0.1:32400}
+      - PLEX_TOKEN=${PLEX_TOKEN:-}
+      - MACHINE_ID=${MACHINE_ID:-}
+      - MUSIC_SECTION_ID=${MUSIC_SECTION_ID:-1}
+      - SERVER_NAME=${SERVER_NAME:-Plex Server}
+      - USER_HANDLE=${USER_HANDLE:-@you • Plexamp}
+      - APP_PASSWORD=${APP_PASSWORD:-}
+      - NTFY_URL=${NTFY_URL:-}
+      - PUBLIC_URL=${PUBLIC_URL:-}
+      - TAUTULLI_DB=/tautulli/tautulli.db
+    volumes:
+      - ${TAUTULLI_DIR:-./cache}:/tautulli:ro
+      - ./cache:/app/cache
+      - ./server.py:/app/server.py:ro
+      - ./index.html:/app/index.html:ro
+      - ./sw.js:/app/sw.js:ro
+      - ./icon-192.png:/app/icon-192.png:ro
+      - ./icon-512.png:/app/icon-512.png:ro
