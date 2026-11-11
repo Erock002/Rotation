@@ -21,6 +21,9 @@ Built with pure **Python 3.11 standard library** (zero external pip dependencies
 ### Completion Telemetry, Genres, Decades, Top Tracks & Devices
 ![Rotation Completion Genres Top Tracks and Devices](docs/dashboard-4-taste.png)
 
+### Instagram Story Studio (1080×1920 9:16 Export)
+![Rotation Instagram Story Studio](docs/story-studio.png)
+
 ---
 
 ## Features
